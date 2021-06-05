@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "598111836955",
+    "firebase_url": "https://worbotsscouting.firebaseio.com",
+    "project_id": "worbotsscouting",
+    "storage_bucket": "worbotsscouting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598111836955:android:e5cb7ddd16ebb671",
+        "android_client_info": {
+          "package_name": "com.robotics.worbots4145.worbotsscouting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598111836955-hma2bugmpi8ha2jifmabfq9l03a07d0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.robotics.worbots4145.worbotsscouting",
+            "certificate_hash": "5a5566f64c10eb046f2d31a13b3aff39aacb65cd"
+          }
+        },
+        {
+          "client_id": "598111836955-te5n0hb1gmt6a8dpat7heetocca24vn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.robotics.worbots4145.worbotsscouting",
+            "certificate_hash": "4d1f42bd190c43ec41debcbc23af24ed5f4e3d27"
+          }
+        },
+        {
+          "client_id": "598111836955-vg6p92drk72oe5s2op4uf0frqe8guj4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAawHfrZufwdx78GR5No4PW1E98j-eEDbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598111836955-vg6p92drk72oe5s2op4uf0frqe8guj4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

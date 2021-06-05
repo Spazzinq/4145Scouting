@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robotics.worbots4145.worbotsscouting.PitActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="191dp">
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="Exit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/SaveScout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Enter" />
+
+            <TextView
+                android:id="@+id/RobotScouting"
+                android:layout_width="182dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/TypeRobot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type in Robot Number:" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/Enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Enter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="400dp"
+                android:layout_height="30dp"
+                android:text="Passes The Line In Auto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:text="Shoots Low In Auto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="32dp"
+                android:text="Shoots Outer In Auto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="360dp"
+                android:layout_marginTop="32dp"
+                android:text="Shoots Inner In Auto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="Use Java"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:text="Use LabView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <CheckBox
+                android:id="@+id/cb7"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="360dp"
+                android:text="Use C++"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+            <CheckBox
+                android:id="@+id/cb8"
+                android:layout_width="400dp"
+                android:layout_height="30dp"
+                android:text="Needs Help Climbing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <CheckBox
+                android:id="@+id/cb9"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="Can Spin Color Wheel"
+                app:layout_constraintStart_toStartOf="@+id/txt5"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+            <CheckBox
+                android:id="@+id/cb10"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="Can Spin For Rotations"
+                app:layout_constraintStart_toEndOf="@+id/cb9"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+            <CheckBox
+                android:id="@+id/cb11"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:text="Can Spin For Specific Color"
+                app:layout_constraintStart_toEndOf="@+id/cb10"
+                app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+            <CheckBox
+                android:id="@+id/cb12"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Can Shoot Low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+            <CheckBox
+                android:id="@+id/cb13"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Can Shoot Outer"
+                app:layout_constraintStart_toEndOf="@+id/cb12"
+                app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+            <CheckBox
+                android:id="@+id/cb14"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Can Shoot Inner"
+                app:layout_constraintStart_toEndOf="@+id/cb13"
+                app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+            <CheckBox
+                android:id="@+id/cb15"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="Manipulator Bot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt9" />
+
+            <CheckBox
+                android:id="@+id/cb16"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="Defense Bot"
+                app:layout_constraintStart_toEndOf="@+id/cb15"
+                app:layout_constraintTop_toBottomOf="@+id/txt9" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt1"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb3">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Number Of Auto Positions:" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt2"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb6">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Climbing System:" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt3"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt2">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Where Can You Climb?" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt4"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb8">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Length To Climb (sec):" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt5"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt4">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight Of Bot:" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt6"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb10">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How Do You Score?" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt7"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb13">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Accuracy:" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt8"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How Many Power Cells Can You Hold?" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt9"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt8">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cycle Time:" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txt10"
+                android:layout_width="720dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb16">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt1010"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Other Notes:" />
+            </android.support.design.widget.TextInputLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
